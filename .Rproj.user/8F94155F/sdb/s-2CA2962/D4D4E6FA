@@ -1,0 +1,18 @@
+{
+    "contents" : "votes.repub <- cluster::votes.repub\nstr(votes.repub)\n\nyears <- as.numeric(gsub(\"X\", \"\", colnames(votes.repub)))\npar(las=2, mar=c(4.5,3,3,2)+0.1, cex=.8)\n#MASS::parcoord(votes.repub, var.label=FALSE, lwd=1)\nmatplot(1L:ncol(votes.repub), t(votes.repub), type=\"l\", col=1, lty=1,\n        axes=F, xlab=\"\", ylab=\"\")\naxis(1, at=seq_along(years), labels = years)\naxis(2)\ntitle(\"Votes for Republican Candidate\\n in Presidential Elections\\n \n      (each line is a country - over the years\")",
+    "created" : 1450643232224.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1683383411",
+    "id" : "D4D4E6FA",
+    "lastKnownWriteTime" : 1450643739,
+    "path" : "~/Dev/data_exploratory/Hierarchical cluster analysis/vote_republican.R",
+    "project_path" : "Hierarchical cluster analysis/vote_republican.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "type" : "r_source"
+}
